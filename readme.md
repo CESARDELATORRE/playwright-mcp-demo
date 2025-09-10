@@ -11,7 +11,9 @@ https://playwright.dev/docs/getting-started-vscode
 
 You can also follow this: https://playwright.dev/docs/intro
 
-##**Note:**
+# Using "plain" Playwright without using its MCP server
+
+**Note:**
 
 **The Playwrigth MCP server is for agent-driven browser automation, not running Playwright Test specs. Use the Playwright CLI or Playwright VS Code extension for running the tests.**
 
@@ -33,6 +35,8 @@ npx playwright test e2e/quote-api-swagger-ui-check.spec.ts --ui --project='Micro
 ![alt text](images/playwright-test-ui.png)
 
 
+# Uing Playwright MCP server
+
 ## 2. Install Playwright MCP server
 
 Add the following MCP config file to your the .vscode/mcp.json file.
@@ -50,7 +54,6 @@ Add the following MCP config file to your the .vscode/mcp.json file.
   }
 }
 ```
-
 
 ## 3 Test mcp-playwrightw with example prompts:
 
