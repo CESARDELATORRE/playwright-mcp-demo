@@ -63,11 +63,11 @@ Add the following MCP config file to your the .vscode/mcp.json file.
 
 User input:
 ```text
-Playwright: go to https://www.microsoft.com and return the page then create a screenshot of it and put it in the screenshots folder with the name microsoft-home-page-screenshot-by-playwright-mcp-server.png
+Use the Playwright MCP server to go to https://www.microsoft.com and return the page then create a screenshot of it and put it in the /demo-screenshots folder with the file name as microsoft-home-page-screenshot-by-playwright-mcp-server.png
 ```
 
 ```text
-Use the Playwright MCP server to go to https://www.microsoft.com, see it in the browser and return the page title and all top navigation link texts in the chat output.
+Use the Playwright MCP server to go to https://www.microsoft.com, see it in the browser and return the page title and all top navigation link texts in the chat output
 ```
 
 
