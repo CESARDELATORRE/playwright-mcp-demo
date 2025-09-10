@@ -1,0 +1,20 @@
+{
+  "name": "playwright_mcp",
+  "version": "1.0.0",
+  "description": "1. install playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+  "test:ms": "playwright test e2e/quote-api-check.spec.ts -g 'Navigate to Microsoft.com' --project=chromium --headed",
+  "test:edge": "playwright test --project='Microsoft Edge' --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^22.13.14"
+  }
+}
