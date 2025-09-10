@@ -86,4 +86,15 @@ This is configured with the [.github/workflows/playwright.yml](.github/workflows
 
 I'm using a different playwright config with the [playwright.ci.config.ts](/playwright.ci.config.ts) file so it's running the tests "headless" with no visual browser, otherwise, you get errors in the CI tests.
 
+Show any of the previous executions triggered when there was a code commit/push to the repo.
+Open any previous execution, then open the section “Run Playwright tests” to see the tests passed.
+
 ![alt text](images/ci-actions-tests-execution.png)
+
+You can also trigger it manually since it supports a manual trigger via workflow_dispatch in playwright.yml
+
+![alt text](images/ci-actions-manual-trigger-workflow.png)
+
+OPTIONAL: Show the Playwright Report downloading the .zip file and opening the HTML file.
+
+![alt text](images/ci-actions-playwright-report.png)
