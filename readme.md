@@ -1,8 +1,12 @@
-# Testing web apps with PlayWright MCP server
+# Testing web apps with "PlayWright" and "Playwright MCP server"
 
 ## Project Summary
 
-This project demonstrates the integration of Playwright with MCP and usage from VS Code GHCP.
+This project demonstrates the integration of Playwright with MCP and usage from VS Code GHCP and GH Actions.
+
+# Using "plain" Playwright without using its MCP server
+
+Let's see how to use the "plain" Playwright in VS Code (still without its MCP server)
 
 ## 1. Install Playwright (for running tests)
 
@@ -11,13 +15,13 @@ https://playwright.dev/docs/getting-started-vscode
 
 You can also follow this: https://playwright.dev/docs/intro
 
-# Using "plain" Playwright without using its MCP server
+**Important note:**
 
-**Note:**
+**For simply running Playwright Test specs, you just use the Playwright CLI or Playwright VS Code extension for running those tests.
+In addition to that, you can also use the Playwrigth MCP server for agent-driven browser automation using GitHub CoPilot. 
+**
 
-**The Playwrigth MCP server is for agent-driven browser automation, not running Playwright Test specs. Use the Playwright CLI or Playwright VS Code extension for running the tests.**
-
-For instance, for running a test you can do it with the CLI like the following:
+For instance, for just simply running a test you can do it with the CLI like the following:
 
 ```
 npx playwright test e2e/microsoft-site-tests.spec.ts --project='Microsoft Edge' --reporter=line
