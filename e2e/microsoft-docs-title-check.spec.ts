@@ -1,25 +1,25 @@
 import { test, expect } from '@playwright/test';
 
-test('Check Quote API Swagger UI title', async ({ page }) => {
-  console.log('Navigating to Quote API Swagger UI...');
+test('Check title in Microsoft docs landing page', async ({ page }) => {
+  console.log('Navigating to Microsoft docs landing page...');
   
   try {
     // Navigate to the URL
-    await page.goto('https://quoteapi-uat.ipipeline.com/swagger/index.html');
+    await page.goto('https://learn.microsoft.com/en-us/docs/');
     
     // Get the title of the page
     const title = await page.title();
     console.log(`Page title: "${title}"`);
-    
-    // Check if the title starts with "Quote API Swagger UI "
-    const expectedPrefix = 'Quote API Swagger UI ';
+
+    // Check if the title starts with "Technical documentation"
+    const expectedPrefix = 'Technical documentation';
     const isSuccess = title.startsWith(expectedPrefix);
     
     if (isSuccess) {
-      console.log('✅ SUCCESS: Title starts with "Quote API Swagger UI "');
+      console.log('✅ SUCCESS: Title starts with "Technical documentation"');
       console.log(`Status: SUCCESS - Site is working correctly`);
     } else {
-      console.log('❌ FAILED: Title does not start with "Quote API Swagger UI "');
+      console.log('❌ FAILED: Title does not start with "Technical documentation"');
       console.log(`Status: FAILED - Expected title to start with "${expectedPrefix}", but got "${title}"`);
     }
     

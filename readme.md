@@ -33,7 +33,7 @@ Or with the GH Extension pressing the button:
 
 Or running the Test in Playwright UI Mode:
 ```
-npx playwright test e2e/quote-api-swagger-ui-check.spec.ts --ui --project='Microsoft Edge' --ui-host=127.0.0.1 --ui-port=9323
+npx playwright test e2e/microsoft-docs-title-check.spec.ts --ui --project='Microsoft Edge' --ui-host=127.0.0.1 --ui-port=9323
 ```
 
 ![alt text](images/playwright-test-ui.png)

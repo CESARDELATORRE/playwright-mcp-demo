@@ -6,7 +6,7 @@ test('Microsoft.com loads and can be screenshotted', async ({ page }) => {
   test.setTimeout(45_000);
 
   // Ensure output folder exists (relative to repo root)
-  const outDir = 'screenshots';
+  const outDir = 'demo-screenshots';
   mkdirSync(outDir, { recursive: true });
 
   // Navigate and wait for the page to settle
